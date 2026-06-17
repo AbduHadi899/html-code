@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <h1>my zoo</h1>
+        <p>use java script and the dom to add animal to each cage!</p>
+        <!--
+            dom tree: zoo is the parent element node.
+            zone divs are child element node.animal names inside each span are text
+            node.
+    -->
+            <div id="zoo"></div>
+            <div clases="zone">zone 1: <span id="zone1"></span></div>
+            <div clases="zone">zone 2: <span id="zone2"></span></div>
+            <div clases="zone">zone 3: <span id="zone3"></span></div>
+            <div clases="zone">total animals: <span id="total"></span></div>
+
+            <br>
+
+            <button oneclick="openzoo()">open the zoo!</button>
+
+            <p id="zoo-status"></p>
+
+            <script>
+                   function openzoo() {
+
+                    document.getElementById("zone1").innerHTML = "Elephant";
+
+                    document.getElementById("zone2").innerHTML = "lion";
+
+                    document.getElementById("zone3").innerHTML = "penguin";
+
+                    document.getElementById("total").innerHTML = "3";
+
+                    document.getElementById("zoo").style.backgroudcolor = "light green"
+
+                    document.getElementById("zoo-status").innerHTML = document.title + " is now open!";
+                
+
+                   }
+            </script>
+    </body>
+</html>
